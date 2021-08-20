@@ -19,7 +19,15 @@ int main()
 
 	for (int i = 0; i<count; i++)
 	{
-		sum += num[i]- '0';
+		//방법1
+		string a;
+		a.push_back(num[i]);
+		sum += stoi(a);
+		
+		//방법2
+		//sum += num[i]- '0';
+		//num[i]만 할 경우 아스키코드 값이 나오기 떄문에 -'0' 해야 숫자 나옴
+		
 	}
 
 	cout << sum << endl;
