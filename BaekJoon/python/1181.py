@@ -1,8 +1,8 @@
-num=int(input())
+num = int(input())
 
-word_list=[]
+word_list = []
 for i in range(num):
-    word=input()
+    word = input()
     word_list.append(word)
 
 word_list = list(set(word_list))
